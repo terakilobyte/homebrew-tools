@@ -5,20 +5,20 @@
 class Onboarder < Formula
   desc ""
   homepage ""
-  version "0.9.9"
+  version "1.0.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v0.9.9/onboarder_0.9.9_Darwin_arm64.tar.gz"
-      sha256 "53e62096ddcd588968f4391e69fd544cc57b3879ea31612212001c02762c6ce5"
+    if Hardware::CPU.intel?
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.0.0/onboarder_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "509ec70f6e698a52c4b52189261b9bd5a852ad34cae10f10b2ff8d31a69a01ab"
 
       def install
         bin.install "onboarder"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v0.9.9/onboarder_0.9.9_Darwin_x86_64.tar.gz"
-      sha256 "a169e8fa12a528ac302d9d9c66382fa99b583b5d4103e8f8d71894113d4fcf60"
+    if Hardware::CPU.arm?
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.0.0/onboarder_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "643716e5f309727802f0fde4e0f2c6886320dd3111d38a14219670aa29d59941"
 
       def install
         bin.install "onboarder"
@@ -28,16 +28,16 @@ class Onboarder < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v0.9.9/onboarder_0.9.9_Linux_x86_64.tar.gz"
-      sha256 "071bcc0d1897ee4c43a1cc9a289941e10bb7288d59effed201aa70987527731b"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.0.0/onboarder_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "6c7caaece57ff3db7118512b6557e85aa646ee855263052ac0f6fb313cd726c6"
 
       def install
         bin.install "onboarder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v0.9.9/onboarder_0.9.9_Linux_arm64.tar.gz"
-      sha256 "60921caedbce8d2cccf79f783feb195924f227d19985bde15e581e78a3a2494f"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.0.0/onboarder_1.0.0_Linux_arm64.tar.gz"
+      sha256 "0a12f04557f9397b52571d8637fc223490725a29bc429b37735ee2b2fdf64480"
 
       def install
         bin.install "onboarder"
