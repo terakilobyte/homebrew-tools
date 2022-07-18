@@ -5,20 +5,20 @@
 class Onboarder < Formula
   desc ""
   homepage ""
-  version "1.3.1"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v1.3.1/onboarder_1.3.1_Darwin_x86_64.tar.gz"
-      sha256 "3aebf10b09eb0b070ff6f355aa26172beefdfc32bf61903c0f77bfba3b3e270b"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.4.0/onboarder_1.4.0_Darwin_x86_64.tar.gz"
+      sha256 "5b1fef598068908cbb2125ccb4e4532710b647bfd25623f2c39a3405dd13e938"
 
       def install
         bin.install "onboarder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v1.3.1/onboarder_1.3.1_Darwin_arm64.tar.gz"
-      sha256 "a5408102f8ac1dc08302a83e2766043e6da743c208bb4dbf6d4510be145b4a02"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.4.0/onboarder_1.4.0_Darwin_arm64.tar.gz"
+      sha256 "69ba6acaa97877d4ed363a3107621cacca7af87b2aec9e1edfc4b7aab220e0c6"
 
       def install
         bin.install "onboarder"
@@ -28,16 +28,16 @@ class Onboarder < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v1.3.1/onboarder_1.3.1_Linux_arm64.tar.gz"
-      sha256 "ce2366a5c813f982f64997aa829561d7b27c2e57d5abc470cef3ad06e3d93f3c"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.4.0/onboarder_1.4.0_Linux_arm64.tar.gz"
+      sha256 "59bc117282343f92ff21e4ffa44bcc1c49ada3715cccca1b85394aa90d332666"
 
       def install
         bin.install "onboarder"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/terakilobyte/onboarder/releases/download/v1.3.1/onboarder_1.3.1_Linux_x86_64.tar.gz"
-      sha256 "31cdefe8bb9a3a5212702e878cc3b3389f6d76f18cf87c42d8caaf4a596a976b"
+      url "https://github.com/terakilobyte/onboarder/releases/download/v1.4.0/onboarder_1.4.0_Linux_x86_64.tar.gz"
+      sha256 "1c126d2541495a3258b6cd754343b87afa96863fa699ce7b1fcd7aa5e02b1304"
 
       def install
         bin.install "onboarder"
